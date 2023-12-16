@@ -7,9 +7,6 @@ import (
 	"strconv"
 	"strings"
 	"syscall"
-
-	//extism
-	"github.com/extism/go-pdk"
 )
 
 // findProcessPIDs finds PIDs of processes with the given name.
@@ -43,9 +40,8 @@ func sendSignalToProcess(pid int, sig syscall.Signal) error {
 	return process.Signal(sig)
 }
 
-//export exit_vim
 func main() {
-	processName := pdk.InputString()
+	processName := "vim"
 
 	pids, err := findProcessPIDs(processName)
 	if err != nil {
@@ -67,4 +63,3 @@ func main() {
 		log.Printf("No %s processes found", processName)
 	}
 }
-
