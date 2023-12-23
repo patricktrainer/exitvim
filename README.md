@@ -1,5 +1,7 @@
 # ExitVim
 
+🚧 Under active construction. As it is, you can exit more than just Vim. 
+
 Welcome to `ExitVim` – the ultimate solution to one of life's greatest mysteries: How do I exit Vim? 
 
 **Are you stuck in Vim?** Do not panic! We've all been there. You opened a file in Vim, and now you feel like you're in a digital escape room. `ExitVim` is here to save your day (and your sanity).
